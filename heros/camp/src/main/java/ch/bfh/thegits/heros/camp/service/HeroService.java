@@ -14,13 +14,7 @@ public class HeroService implements IHeroService
     {
         Hero hero = new Hero( name, rand.nextInt( 100 ) + 1, rand.nextInt( 100 ) + 1, 100 );
         System.out.println( "Created new Hero" );
-        printHero( hero );
+        hero.print();
         return hero;
-    }
-
-    private void printHero( Hero hero )
-    {
-        System.out.println( String.format( "Hero %s: Attack: %d, Defence: %d, Health: %d", hero.getName(), hero.getAtk(), hero
-                .getDef(), hero.getHp() ) );
     }
 }
