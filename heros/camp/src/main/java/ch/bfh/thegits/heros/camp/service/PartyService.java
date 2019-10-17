@@ -14,7 +14,7 @@ public class PartyService implements IPartyService
     private IHeroService heroService;
 
     @Autowired
-    PartyService( IHeroService heroService )
+    public PartyService( IHeroService heroService )
     {
         this.heroService = heroService;
     }
