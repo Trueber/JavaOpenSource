@@ -1,7 +1,18 @@
 # Spring Data
 
 ## What is Spring Data
-TODO
+Spring Data is an umbrella project to provide a fimiliar and consistent programming model for various data access technologies while still retaining the special traits of the underlying data store. It contains many subprojects that are specific to a given database.  
+[https://spring.io/projects/spring-data](https://spring.io/projects/spring-data)
+
+### Features
+* Powerful repository and custom object-mapping abstractions
+* Dynamic query derivation from repository method names
+* Implementation domain base classes providing basic properties
+* Support for transparent auditing (created, last changed)
+* Possibility to integrate custom repository code
+* Easy Spring integration via JavaConfig and custom XML namespaces
+* Advanced integration with Spring MVC controllers
+* Experimental support for cross-store persistence
 
 ## How to use
 ### Select Data Access Technology
@@ -89,7 +100,6 @@ public class EntityClass {
 
 ### Repository with Queries
 Spring Data is able to create the repository and quiery implementations automatically. Only the definition of an Interface is required with the desired quiery methods. The query implementations are generated based on the method name. Visit [https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation) for the query syntax.
-
 > Note:  `CrudRepository` may need to be replaced for different technologies (e.g. `MongoRepository` for MongoDB)
 
 ```java
@@ -99,8 +109,7 @@ public interface CustomerRepository extends CrudRepository<EntityClass, Long /*t
     Customer findById(Long /*type of id*/ id);
 }
 ```
-## Authors
-* Joel Studler [joel.studler@students.bfh.ch](joel.studler@students.bfh.ch)
+## Author
 * Fabian Wittwer [fabian.wittwer@students.bfh.ch](fabian.wittwer@students.bfh.ch)
 
 ## Links
