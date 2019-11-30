@@ -21,10 +21,10 @@ public class Hero
     private String name;
     private int atk;
     private int def;
-    private int hp;
+    private double hp;
 
     public void print()
     {
-        System.out.println( String.format( "Hero %s: Attack: %d, Defence: %d, Health: %d", name, atk, def, hp ) );
+        System.out.println( String.format( "Hero %s: Attack: %d, Defence: %d, Health: %.1f", name, atk, def, hp ) );
     }
 }
