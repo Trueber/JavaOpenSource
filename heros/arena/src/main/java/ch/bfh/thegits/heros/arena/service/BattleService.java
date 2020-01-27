@@ -1,6 +1,7 @@
 package ch.bfh.thegits.heros.arena.service;
 
-import ch.bfh.thegits.heros.camp.model.Party;
+
+import ch.bfh.thegits.heros.arena.model.Party;
 
 public interface BattleService
 {

@@ -1,7 +1,7 @@
 package ch.bfh.thegits.heros.arena.controller;
 
+import ch.bfh.thegits.heros.arena.model.Party;
 import ch.bfh.thegits.heros.arena.service.BattleService;
-import ch.bfh.thegits.heros.camp.model.Party;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -3,7 +3,7 @@ package ch.bfh.thegits.heros.arena.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
+//import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,7 +17,7 @@ public class Hero
 {
     @Id
     @GeneratedValue( generator = "system-uuid" )
-    @GenericGenerator( name = "system-uuid", strategy = "uuid" )
+    //@GenericGenerator( name = "system-uuid", strategy = "uuid" )
     private String id;
 
     private String name;
