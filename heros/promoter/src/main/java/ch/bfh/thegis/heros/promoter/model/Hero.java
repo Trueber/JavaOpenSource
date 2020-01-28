@@ -1,4 +1,4 @@
-package ch.bfh.thegits.heros.arena.model;
+package ch.bfh.thegis.heros.promoter.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
