@@ -13,6 +13,7 @@ public class Hero
     private int atk;
     private int def;
     private double hp;
+    private double morale;
 
     public void print()
     {

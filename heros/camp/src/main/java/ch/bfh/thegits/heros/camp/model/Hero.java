@@ -22,9 +22,10 @@ public class Hero
     private int atk;
     private int def;
     private double hp;
+    private double morale;
 
     public void print()
     {
-        System.out.println( String.format( "Hero %s: Attack: %d, Defence: %d, Health: %.1f", name, atk, def, hp ) );
+        System.out.println( String.format( "Hero %s: Attack: %d, Defence: %d, Health: %.1f, Morale: %.1f", name, atk, def, hp, morale ) );
     }
 }
