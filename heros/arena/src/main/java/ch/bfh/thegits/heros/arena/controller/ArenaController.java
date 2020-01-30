@@ -1,7 +1,7 @@
 package ch.bfh.thegits.heros.arena.controller;
 
+import ch.bfh.thegits.heros.arena.model.Party;
 import ch.bfh.thegits.heros.arena.service.BattleService;
-import ch.bfh.thegits.heros.camp.model.Party;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +24,6 @@ public class ArenaController {
 
         Party challengee = challengers.get(0);
         Party challenger = challengers.get(1);
-        String winner =  battleService.battle(challengee, challenger);
-        return "The winner of the battle between '"+challengee.getName()+"' and '"+challenger.getName()+"' was '"+winner+"'!";
+        return battleService.battle(challengee, challenger);
     }
 }

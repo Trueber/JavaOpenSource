@@ -2,8 +2,8 @@ package ch.bfh.thegis.heros.promoter.service.impl;
 
 import ch.bfh.thegis.heros.promoter.client.ArenaClient;
 import ch.bfh.thegis.heros.promoter.client.CampClient;
+import ch.bfh.thegis.heros.promoter.model.Party;
 import ch.bfh.thegis.heros.promoter.service.PromoterService;
-import ch.bfh.thegits.heros.camp.model.Party;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
