@@ -9,7 +9,7 @@ import java.util.List;
 public class ArenaClientFallback implements ArenaClient {
 
     @Override
-    public String battle(List<Party> challengers) {
-        return "The battle has to be postponed because the arena is occupied at the moment";
+    public Party battle(List<Party> challengers) {
+        return null;
     }
 }

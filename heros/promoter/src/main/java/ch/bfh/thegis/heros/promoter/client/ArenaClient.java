@@ -10,5 +10,5 @@ import java.util.List;
 @FeignClient(value = "arena-service", fallback = ArenaClientFallback.class)
 public interface ArenaClient {
     @PostMapping("/battle")
-    String battle(@RequestBody List<Party> challangers);
+    Party battle(@RequestBody List<Party> challangers);
 }

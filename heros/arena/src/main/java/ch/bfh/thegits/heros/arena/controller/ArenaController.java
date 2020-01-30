@@ -24,7 +24,6 @@ public class ArenaController {
 
         Party challengee = challengers.get(0);
         Party challenger = challengers.get(1);
-        String winner =  battleService.battle(challengee, challenger);
-        return "The winner of the battle between '"+challengee.getName()+"' and '"+challenger.getName()+"' was '"+winner+"'!";
+        return battleService.battle(challengee, challenger);
     }
 }

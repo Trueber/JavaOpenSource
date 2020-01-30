@@ -68,12 +68,16 @@ public class DefaultBattleService implements BattleService {
             // check if a party has already lost (no members left), return the winners party name
             if (challengees.isEmpty()) {
                 LOG.info("Party '" + challengerParty.getName() + "' wins this battle in " + roundCount + " rounds.");
-                return challengerParty.getName();
+                List<Hero> all = challengerParty.getMembers();
+                return String.format("Name: %s, Members:\n%s\n%s\n%s\n%s", challengerParty.getName(),
+                        all.get(0).getName(), all.get(1).getName(), all.get(2).getName(), all.get(3).getName());
             }
 
             if (challengers.isEmpty()) {
                 LOG.info("Party '" + challengeeParty.getName() + "' wins this battle in " + roundCount + " rounds.");
-                return challengeeParty.getName();
+                List<Hero> all = challengeeParty.getMembers();
+                return String.format("Name: %s, Members:\n%s\n%s\n%s\n%s", challengeeParty.getName(),
+                        all.get(0).getName(), all.get(1).getName(), all.get(2).getName(), all.get(3).getName());
             }
         }
     }
